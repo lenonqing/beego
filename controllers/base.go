@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"framework/libs"
+	"beego/libs"
 
 	"github.com/astaxie/beego"
 )

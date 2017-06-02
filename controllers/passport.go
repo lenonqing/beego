@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"framework/libs"
-	"framework/models"
-	"framework/services"
+	"beego/libs"
+	"beego/models"
+	"beego/services"
 )
 
 // PassportController 通行证相关控制器

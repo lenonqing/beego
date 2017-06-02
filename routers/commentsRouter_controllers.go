@@ -7,7 +7,7 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["framework/controllers:PassportController"] = append(beego.GlobalControllerRouter["framework/controllers:PassportController"],
+	beego.GlobalControllerRouter["beego/controllers:PassportController"] = append(beego.GlobalControllerRouter["beego/controllers:PassportController"],
 		beego.ControllerComments{
 			Method: "Get",
 			Router: `/`,
@@ -15,7 +15,7 @@ func init() {
 			MethodParams: param.Make(),
 			Params: nil})
 
-	beego.GlobalControllerRouter["framework/controllers:UserController"] = append(beego.GlobalControllerRouter["framework/controllers:UserController"],
+	beego.GlobalControllerRouter["beego/controllers:UserController"] = append(beego.GlobalControllerRouter["beego/controllers:UserController"],
 		beego.ControllerComments{
 			Method: "Get",
 			Router: `/:uid`,

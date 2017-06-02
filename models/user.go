@@ -1,7 +1,7 @@
 package models
 
 import (
-	"framework/db"
+	"beego/db"
 
 	"github.com/astaxie/beego"
 

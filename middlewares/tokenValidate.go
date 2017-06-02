@@ -1,9 +1,9 @@
 package middlewares
 
 import (
+	"beego/libs"
+	"beego/services"
 	"fmt"
-	"framework/libs"
-	"framework/services"
 	"regexp"
 	"strconv"
 	"strings"

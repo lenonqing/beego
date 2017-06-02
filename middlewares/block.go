@@ -1,8 +1,8 @@
 package middlewares
 
 import (
-	"framework/db"
-	"framework/libs"
+	"beego/db"
+	"beego/libs"
 	"strconv"
 
 	"github.com/astaxie/beego"

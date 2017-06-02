@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"framework/libs"
-	"framework/models"
+	"beego/libs"
+	"beego/models"
 )
 
 // UserController 用户相关控制器

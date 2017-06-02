@@ -8,8 +8,8 @@
 package routers
 
 import (
-	"framework/controllers"
-	_ "framework/middlewares"
+	"beego/controllers"
+	_ "beego/middlewares"
 
 	"github.com/astaxie/beego"
 )

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"framework/graylog"
-	_ "framework/routers"
+	"beego/graylog"
+	_ "beego/routers"
 
-	"framework/db"
+	"beego/db"
 
 	"github.com/astaxie/beego"
 )
