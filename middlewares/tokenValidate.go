@@ -18,7 +18,7 @@ var whiteList = map[string][]string{
 }
 
 var (
-	secret []byte = []byte("admin@hortorgames.com")
+	secret []byte = []byte("admin@xxx.com")
 )
 
 func isMatchRoute(route, path string) bool {
