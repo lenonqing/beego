@@ -1,0 +1,56 @@
+swagger: "2.0"
+info:
+  title: beego Test API
+  description: beego has a very cool tools to autogenerate documents for your API
+  version: 1.0.0
+  termsOfService: http://beego.me/
+  contact:
+    email: astaxie@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+basePath: /v1
+paths:
+  /auth/:
+    get:
+      tags:
+      - auth
+      description: auth user by uid
+      operationId: PassportController.Get
+      parameters:
+      - in: query
+        name: uid
+        description: the uid you want to auth
+        required: true
+        type: integer
+        format: int64
+      responses:
+        "200":
+          description: '{token} string'
+        "403":
+          description: :uid is empty
+  /user/{uid}:
+    get:
+      tags:
+      - user
+      description: find user by uid
+      operationId: UserController.Get
+      parameters:
+      - in: path
+        name: uid
+        description: the uid you want to get
+        required: true
+        type: integer
+        format: int64
+      responses:
+        "200":
+          description: '{user} entities.user'
+        "403":
+          description: :uid is empty
+tags:
+- name: auth
+  description: |
+    PassportController 通行证相关控制器
+- name: user
+  description: |
+    UserController 用户相关控制器
