@@ -1,4 +1,6 @@
 # beego
+beego引擎集成graylog日志，redis、mongodb数据库，token校验、账号ban中间件，以及响应格式化功能。
+
 1.安装包
 
     go get github.com/astaxie/beego
